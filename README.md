@@ -10,8 +10,6 @@ The goal of the project is to implement a *Python* servor, as an application, al
 For the moment, the application is only for two sportmen, [Lebron James](https://en.wikipedia.org/wiki/LeBron_James) and [Rafael Nadal](https://en.wikipedia.org/wiki/Rafael_Nadal), but new ones will be added soon. 
 
 
-
-
 ### Description of this repository
 
 * the `CNN_sport.ipynb`: it explains how the deep learning model has been created
@@ -21,7 +19,11 @@ For the moment, the application is only for two sportmen, [Lebron James](https:/
   * **uploads**: storage folder for all the uploaded pictures
   * `app.py`: *Flask* application
  
-
+ 
+ ### Organisation
+ * the pictures dataset has been automatically extracted using Google Images. The needed files are available in the folder **dataset_from_google**. A *JavaScript* script gathers image URLs which can be downloaded using a *Python* code. You will find all the process [here](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)
+ * the classificer model has been developed in the `CNN_sport.ipynb` with the [*Keras*](https://keras.io) library
+ 
 
 
 
