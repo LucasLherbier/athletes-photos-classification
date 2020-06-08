@@ -17,11 +17,11 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
   * **static**: it contains a [*CSS*](https://www.w3schools.com/css/) file for styling the application and a [*JavaScript*](https://www.w3schools.com/js/) file that adds dynamic behavior to the page.
   * **templates**: it is composed of [*HTML*](https://www.w3schools.com/html/) scripts in which the variable data can be inserted dynamically. A template is rendered with specific data to produce a final document. The goal is to avoid generating HTML content from Python code is inconvenient.
   * **uploads**: storage folder for all the uploaded pictures
-  * `app.py`: the *Flask* application - it imports the *Flask* module, creates a web server and instances of the *Flask* class —
+  * `app.py`: the *Flask* application - it imports the *Flask* module, creates a web server and instances of the *Flask* class -
  
  
  ### Organization
- * the pictures dataset has been automatically extracted using Google Images. The needed files are available in the folder **dataset_from_google**. A *JavaScript* script gathers image URLs which can be downloaded using a *Python* code. You will find all the process [here](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/)
+ * the pictures dataset has been automatically extracted using Google Images. The needed files are available in the folder **dataset_from_google**. A *JavaScript* script gathers image URLs which can be downloaded using a *Python* code. You will find all the process [here](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/).
  * the classificer model has been developed in the `CNN_sport.ipynb` with the [*Keras*](https://keras.io) library
  * the web server has been developed with the micro web framework [*Flask*](https://flask.palletsprojects.com/en/1.1.x/)
  
