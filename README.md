@@ -13,6 +13,7 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
 ### Description of this repository
 
 * the `CNN_sport.ipynb`: it explains how the deep learning model has been created
+*  **data**: it contains 30 examples of the athletes pictures
 *  **dataset_from_google**: it contains the files to create a pictures dataset automatically from Google Images. You will find all the process [here](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/).
 * **deploy**: it creates the *Flask* application. It is divided in diverse parts :
   * **static**: it contains a [*CSS*](https://www.w3schools.com/css/) file for styling the application and a [*JavaScript*](https://www.w3schools.com/js/) file that adds dynamic behavior to the page.
