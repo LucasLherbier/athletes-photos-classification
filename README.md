@@ -39,6 +39,7 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
   <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_3.PNG" alt="Trulli" style="width:100%">
   <figcaption> <small> <i> Figure 2: Prediction for a Nadal picture. </i>  </small> </figcaption>
 </figure>
+
 <br>
 
 <figure>
