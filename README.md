@@ -11,7 +11,7 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
 
 ### Description of this repository
 
-* the `CNN_sport.ipynb`: it explains how the deep learning model has been created
+* the `CNN_sport.ipynb`: it explains how the deep learning model has been created. It needs around 30s to load.
 *  **data**: it contains 30 examples of the athletes pictures
 *  **dataset_from_google**: it contains the files to create a pictures dataset automatically from Google Images. You will find all the process [here](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/).
 * **deploy**: it creates the *Flask* application. It is divided in diverse parts :
@@ -23,7 +23,7 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
  
  ### Organization
  * the pictures dataset has been automatically extracted using Google Images. The needed files are available in the folder **dataset_from_google**. A *JavaScript* script gathers image URLs which can be downloaded using a *Python* code. You will find all the process [here](https://www.pyimagesearch.com/2017/12/04/how-to-create-a-deep-learning-dataset-using-google-images/).
- * the classificer model has been developed in the `CNN_sport.ipynb` with the [*Keras*](https://keras.io) library
+ * the classifier model has been developed in the `CNN_sport.ipynb` with the [*Keras*](https://keras.io) library
  * the web server has been developed with the micro web framework [*Flask*](https://flask.palletsprojects.com/en/1.1.x/)
  
  
