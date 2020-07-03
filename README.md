@@ -7,8 +7,7 @@ This repository is an ongoing personal project combining my passion for sport wi
 ### Goal
 
 The goal of the project is to implement a *Python* server, as an application, allowing to classify pictures between famous athletes. The classification is based on an deep learning model using convolutional neural networks.  
-For the moment, the application is only for two sportsmen, [Lebron James](https://en.wikipedia.org/wiki/LeBron_James) and [Rafael Nadal](https://en.wikipedia.org/wiki/Rafael_Nadal), but new ones will be added soon. 
-
+For the moment, the application is only for two sportsmen, [Lebron James](https://en.wikipedia.org/wiki/LeBron_James) and [Rafael Nadal](https://en.wikipedia.org/wiki/Rafael_Nadal), but new ones will be added. 
 
 ### Description of this repository
 
@@ -27,3 +26,23 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
  * the classificer model has been developed in the `CNN_sport.ipynb` with the [*Keras*](https://keras.io) library
  * the web server has been developed with the micro web framework [*Flask*](https://flask.palletsprojects.com/en/1.1.x/)
  
+ 
+ ### Extract of the application
+
+<figure>
+  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_1.png" alt="Trulli" style="width:100%">
+  <figcaption> <small> <i> Figure 1: Python server interface.</i>  </small> </figcaption>
+</figure>
+<br>
+
+<figure>
+  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_3.PNG" alt="Trulli" style="width:100%">
+  <figcaption> <small> <i> Figure 2: Prediction for a Nadal picture. </i>  </small> </figcaption>
+</figure>
+<br>
+
+<figure>
+  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_2.PNG" alt="Trulli" style="width:100%">
+  <figcaption> <small><small> <i> Figure 3: Prediction for a James picture.</i> </small> </figcaption>
+</figure>
+
