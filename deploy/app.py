@@ -19,7 +19,8 @@ app = Flask(__name__)
 os.getcwd()
 
 #print('Model loaded. Check http://127.0.0.1:5000/')
-model = keras.models.load_model('D:/Documents/sport/james_vs_nadal.h5')
+#model = keras.models.load_model('D:/Documents/sport/james_vs_nadal.h5')
+model = keras.models.load_model('./models/james_vs_nadal_v2.h5')
 #img_path = 'D:/Documents/deploy/uploads/james17.jpg'
 
 # ::: MODEL FUNCTIONS :::
@@ -63,4 +64,5 @@ def upload():
 		return '{:f}'.format(prediction)
 
 if __name__ == '__main__':
-	app.run(debug = True)
+	#app.run(debug = True)
+	app.run(debug = False)
