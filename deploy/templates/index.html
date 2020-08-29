@@ -1,17 +1,40 @@
-<html>
+<html style="background-color: #387ce2;
+
+    background-image:
+    repeating-linear-gradient(
+      45deg,
+      rgba(0,0,0,0.8),
+      rgba(0,0,0,0.8) 100px,
+      transparent 0px,
+      transparent 200px
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(0,0,0,0.5),
+      rgba(0,0,0,0.5)100px,
+      /*rgba(0,0,0,0.5) 100px,*/
+      transparent 0px,
+      transparent 200px
+      /*transparent 200px*/
+    );">
 
     <head>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <!--meta name="viewport" content="width-device-width, initial-scale=1.0"-->
         <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+        <!--link rel="stylesheet" type="text/css" href="../static/css_main.css"-->
 
         <title> Athletes classification (A.I. solution)</title>
 
-        <meta name="theme-color" content="#ffffff">
+        <!--meta name="theme-color" content="#ffffff"-->
     </head>
 
 <body>
 
-    <div class="very_main">
+
+
+
+
+    <div class="very_main" style="height: 110vh; max-width:600px; /*background-color: #1c3e71;*/ background-color: #387ce2; border-left: 3px solid #060c17; border-right: 3px solid #060c17;  ">
 
         <header>
             <div class="top_frame">
@@ -34,9 +57,9 @@
                 <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
             </form>
 
-            <div class="image-section" style="display:none;">
-                <div class="img-preview">
-                    <div id="imagePreview">
+            <div class="image-section" style="display:none; border: none">
+                <div class="img-preview" style="border: none; box-shadow: none;">
+                    <div id="imagePreview" style="background-size: contain;">
                     </div>
                 </div>
                 <div>
@@ -58,7 +81,7 @@
 </br>
 </br>
             Created by <a href="https://fr.linkedin.com/in/lucas-lherbier/en" style="color: #B0B0B0 ;"> Lucas Lherbier </a>. Montreal, 2020.</br>
-         E-mail: <i> lucas.lherbier@orange.fr </i>. </br>
+         E-mail: <i> lucas.lherbier@orange.fr </i> </br>
 
         </p>
 
