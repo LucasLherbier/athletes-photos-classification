@@ -1,4 +1,4 @@
-# :: Import modules and packages ::
+# ::: Import modules and packages :::
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
@@ -14,7 +14,7 @@ from keras.preprocessing import image
 import numpy as np
 import os
 
-#::: Flask App Engine :::
+# ::: Flask App Engine :::
 # Define a Flask app
 app = Flask(__name__)
 os.getcwd()
@@ -69,4 +69,4 @@ def upload():
 #
 if __name__ == "__main__":
     # app.run(debug = True)
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=8080, debug=True)

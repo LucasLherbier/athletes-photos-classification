@@ -13,6 +13,9 @@ RUN pip install -r requirements.txt
 # copy the content of the local src directory to the working directory
 COPY deploy/ .
 
+# set the server n dev mode
+ENV  FLASK_ENV=development
+
 # command to run on container start
 EXPOSE 8080
 CMD [ "python", "./app.py" ]
