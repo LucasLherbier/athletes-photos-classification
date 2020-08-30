@@ -14,4 +14,5 @@ RUN pip install -r requirements.txt
 COPY deploy/ .
 
 # command to run on container start
+EXPOSE 5000
 CMD [ "python", "./app.py" ]
