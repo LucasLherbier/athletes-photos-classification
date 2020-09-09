@@ -8,14 +8,15 @@ WORKDIR .
 COPY requirements.txt .
 
 # install dependencies
-RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt --use-feature=2020-resolver
 
 # copy the content of the local src directory to the working directory
 COPY deploy/ .
 
 # set the server n dev mode
-ENV  FLASK_ENV=development
+# ENV  FLASK_ENV=development
 
 # command to run on container start
 EXPOSE 8080
 CMD [ "python", "./app.py" ]
+#CMD ["gunicorn", "-w 4", "main:app"]
