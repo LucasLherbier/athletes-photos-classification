@@ -21,13 +21,13 @@
 
         <header>
             <div class="top_frame">
-                <h1> Athletes classification </h1>
+                <h1 style="padding-top: 30px; font-weight: bold;"> Athletes classification </h1>
             </div>
         </header>
 
         {% extends "base.html" %} {% block content %}
 
-        <p class="description">
+        <p class="description" style="margin-bottom: 20px">
             Select your athletes (Lebron James or Rafael Nadal) file.</br>
 	   Click <b>Predict</b> to get the results.
         </p>
@@ -40,13 +40,16 @@
                 <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
             </form>
 
-            <div class="image-section" style="border: none;">
+            <!--div class="image-section" style="border: none;"-->
+            <div style="border: none;">
+                <!--div style="border: none; box-shadow: none;"-->
                 <div class="img-preview" style="border: none; box-shadow: none;">
                     <div id="imagePreview" style="background-size: contain;">
                     </div>
                 </div>
                 <div>
                     <button type="button" class="upload-label" id="btn-predict">Predict!</button>
+                    <!--button type="button" class="upload-label" id="btn-predict" style="display:none">Predict!</button-->
                 </div>
             </div>
 
@@ -59,11 +62,11 @@
         </div>
 
         <p class="final_word">
-         Implemented with <a href="https://keras.io/" style="color: #B0B0B0 ;"> <i> Keras </i> </a> and <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color: #B0B0B0 ;"> <i> Flask</i> </a>. </br>
+         Implemented with <a href="https://keras.io/" style="color: #552583 ;"> <i> Keras </i> </a> and <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color: #552583 ;"> <i> Flask</i> </a>. </br>
 
 </br>
 </br>
-            Created by <a href="https://fr.linkedin.com/in/lucas-lherbier/en" style="color: #B0B0B0 ;"> Lucas Lherbier </a>. Montreal, 2020.</br>
+            Created by <a href="https://fr.linkedin.com/in/lucas-lherbier/en" style="color: #552583 ;"> Lucas Lherbier </a>. Montreal, 2020.</br>
          E-mail: <i> lucas.lherbier@orange.fr </i> </br>
 
         </p>
