@@ -114,6 +114,9 @@ input[type="file"] {
      */
 }
 
+/*
+correct spin
+*/
 .loader {
     border: 8px solid #552583; /* Blue */
     border-radius: 50%;

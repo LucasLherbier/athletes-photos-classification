@@ -18,5 +18,7 @@ COPY deploy/ .
 
 # command to run on container start
 EXPOSE 8080
-CMD [ "python", "./app.py" ]
-#CMD ["gunicorn", "-w 4", "main:app"]
+WORKDIR deploy/
+# CMD [ "python", "./app.py" ]
+# CMD ["gunicorn", "-w 4", "main:app"]
+CMD ["gunicorn"  , "--bind", "0.0.0.0:8080", "wsgi:app"]
