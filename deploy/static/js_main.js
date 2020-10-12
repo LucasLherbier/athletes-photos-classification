@@ -45,6 +45,13 @@ $(document).ready(function () {
                 // Get and display the result
                 $('.loader').hide();
                 $('#result').fadeIn(1200);
+
+                //let text;
+                //console.log(data)
+                //parseInt(data) > 50 ? text = data + '% Nadal' : text = data + '% James'
+                //$('#result').text(text);
+                //console.log(text)
+
                 $('#result').text(data + '% Nadal');
                 console.log('Success!');
             },

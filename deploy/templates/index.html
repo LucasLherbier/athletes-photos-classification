@@ -1,27 +1,33 @@
 <html>
+<!--html class="bg-red-90 black pattern-vertical-lines-lg"-->
 
     <head>
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <!--meta name="viewport" content="width-device-width, initial-scale=1.0"-->
         <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../static/css_main.css?q=12805978">
 
         <title> Athletes classification (A.I. solution)</title>
 
-        <meta name="theme-color" content="#ffffff">
     </head>
 
 <body>
+
+
+
 
     <div class="very_main">
 
         <header>
             <div class="top_frame">
-                <h1> Athletes classification </h1>
+                <h1 style="padding-top: 30px; font-weight: bold;"> Athletes classification </h1>
             </div>
         </header>
 
         {% extends "base.html" %} {% block content %}
 
-        <p class="description">
+        <p class="description" style="margin-bottom: 20px">
             Select your athletes (Lebron James or Rafael Nadal) file.</br>
 	   Click <b>Predict</b> to get the results.
         </p>
@@ -29,18 +35,21 @@
         <div>
             <form id="upload-file" method="post" enctype="multipart/form-data">
                 <label for="imageUpload" class="upload-label">
-                   <p style="color:#505050"> Choose your athletes</p>
+                   <p style="color:#212529"> Choose your athletes</p>
                 </label>
                 <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
             </form>
 
-            <div class="image-section" style="display:none;">
-                <div class="img-preview">
-                    <div id="imagePreview">
+            <!--div class="image-section" style="border: none;"-->
+            <div style="border: none;">
+                <!--div style="border: none; box-shadow: none;"-->
+                <div class="img-preview" style="border: none; box-shadow: none;">
+                    <div id="imagePreview" style="background-size: contain;">
                     </div>
                 </div>
                 <div>
-                    <button type="button" class="upload-label" id="btn-predict">Predict!</button>
+                    <!--button type="button" class="upload-label" id="btn-predict">Predict!</button-->
+                    <button type="button" class="upload-label" id="btn-predict" style="display:none">Predict!</button>
                 </div>
             </div>
 
@@ -53,12 +62,12 @@
         </div>
 
         <p class="final_word">
-         Implemented with <a href="https://keras.io/" style="color: #B0B0B0 ;"> <i> Keras </i> </a> and <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color: #B0B0B0 ;"> <i> Flask</i> </a>. </br>
+         Implemented with <a href="https://keras.io/" style="color: #552583 ;"> <i> Keras </i> </a> and <a href="https://flask.palletsprojects.com/en/1.1.x/" style="color: #552583 ;"> <i> Flask</i> </a>. </br>
 
 </br>
 </br>
-            Created by <a href="https://fr.linkedin.com/in/lucas-lherbier/en" style="color: #B0B0B0 ;"> Lucas Lherbier </a>. Montreal, 2020.</br>
-         E-mail: <i> lucas.lherbier@orange.fr </i>. </br>
+            Created by <a href="https://fr.linkedin.com/in/lucas-lherbier/en" style="color: #552583 ;"> Lucas Lherbier </a>. Montreal, 2020.</br>
+         E-mail: <i> lucas.lherbier@orange.fr </i> </br>
 
         </p>
 

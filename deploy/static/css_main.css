@@ -9,13 +9,24 @@
 }
 
 html {
-    background-color: #387ce2;
-    color: #ffffff;
+    /*background-color: #d1363d;*/
+    background-image: -moz-linear-gradient(0deg, #552583, #fdb927);
+    background-image: -webkit-linear-gradient(0deg, #552583, #fdb927);
+    background-image: linear-gradient(0deg, #552583, #fdb927);
+
     font-family: 'Georgia', serif;
     font-weight: 300;
     font-size: 15px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+}
+
+.white, .hover-white:hover {
+    color: #b5c2cc !important;
+}
+
+body {
+    background-color: transparent;
 }
 
 .clearfix {zoom: 1}
@@ -34,14 +45,14 @@ html {
 
 a:link,
 a:visited {
-    color: #ffffff;
+    /*color: #ffffff;*/
     text-decoration: none;
     padding-bottom: 1px;
 }
 
 a:hover,
 a:active {
-    color: #cccccc;
+    /* color: #cccccc;*/
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -54,22 +65,26 @@ a:active {
     width: 256px;
     height: 256px;
     position: relative;
-    border: 5px solid #cccccc;
+    /*border: 5px solid #cccccc;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+
+     */
     margin-top: 1em;
     margin-bottom: 1em;    
 }
 
 .img-preview>div {
+    /*display: inline;*/
     width: 100%;
     height: 100%;
-    background-size: 256px 256px;
+    /*background-size: 256px 256px;*/
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 .img-preview:hover {
-    border: 5px solid #2dc4ed;
+    /* border: 5px solid #2dc4ed;*/
     -webkit-transition: all 0.5s ease;
      transition: all 0.5s ease;  
 }
@@ -83,23 +98,27 @@ input[type="file"] {
     margin-top: 7px;
     margin-bottom: 7px;
     padding: 12px 28px;
-    background: #ffffff;
-    color: #2dc4ed;
+    /*background: #ffffff;
+    color: #2dc4ed;*/
     font-size: 1em;
     transition: all .4s;
     cursor: pointer;
-    border: 2px solid #cccccc;
+    border: 2px solid #212529;
 }
 
 .upload-label:hover{
-    background: #2dc4ed;
-    color: #ffffff;
-    border: 2px solid #ffffff;
+    background: #fdb927	;
+    /*
+    color: black;
+    border: 2px solid black;
+     */
 }
 
+/*
+correct spin
+*/
 .loader {
-    border: 8px solid #f3f3f3; /* Blue */
-    border-top: 8px solid #3498db; /* Blue */
+    border: 8px solid #552583; /* Blue */
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -112,8 +131,16 @@ input[type="file"] {
 }
 
 .very_main{
-    margin: auto;
+    /*margin: auto;*/
+    margin: 30px auto auto;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+
     text-align: center;
+    min-height:750px;
+    max-width:600px;
+    /*background-color: #517495;*/
+    background-color: white;
 }
 
 .final_word{
