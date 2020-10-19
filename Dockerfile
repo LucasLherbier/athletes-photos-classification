@@ -8,13 +8,16 @@ WORKDIR .
 COPY deploy/requirements.txt .
 
 # install dependencies
-RUN pip install -r requirements.txt --use-feature=2020-resolver
+RUN pip install --no-cache-dir -r requirements.txt --use-feature=2020-resolver
 
 # copy the content of the local src directory to the working directory
 COPY deploy/ .
 
-# set the server in dev mode
-# ENV  FLASK_ENV=development
+# Set the image environment
+# ENV DOCKER_ENV=dev
+# ENV DOCKER_ENV=prod
+
+# RUN if [ "$DOCKER_ENV" = "prod" ] ; then echo Argument not provided ; else echo Argument is $arg ; fi
 
 # command to run on container start
 EXPOSE 8080
