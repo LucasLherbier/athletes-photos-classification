@@ -4,6 +4,13 @@ This repository is an ongoing personal project combining my passion for sport wi
 
 A live version of the app can be found at https://stormy-savannah-71478.herokuapp.com
 
+# Table of contents
+
+* Description of the project
+ * Goal
+ * Description of this repository
+ * Organization
+ * Extract of the application
 ## Description of the project
 
 ### Goal
