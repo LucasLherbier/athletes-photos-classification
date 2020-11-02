@@ -7,10 +7,10 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 # Table of contents
 
 * Description of the project
- * Goal
- * Description of this repository
- * Organization
- * Extract of the application
+   * Goal
+   * Description of this repository
+   * Organization
+   * Extract of the application
 ## Description of the project
 
 ### Goal
