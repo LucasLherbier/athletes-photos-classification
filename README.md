@@ -11,6 +11,13 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
    * Description of this repository
    * Organization
    * Extract of the application
+* Development Workflow
+   * Overall description
+   * Build the Docker image 
+   * Run server locally
+   * Download the Docker image
+   * Communications inside the container
+    
 ## Description of the project
 
 ### Goal
