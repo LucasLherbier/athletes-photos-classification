@@ -6,17 +6,17 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 
 # Table of contents
 
-* Description of the project
+* [Description of the project](#Description of the project) 
    * [Goal](#Goal)
-   * Description of this repository
-   * Organization
-* Development Workflow
-   * Overall description
-   * Build the Docker image 
-   * Run server locally
-   * Download the Docker image
-   * Communications inside the container
-* Extract of the application 
+   * [Description of this repository](#Description of this repository) 
+   * [Organization](#Organization) 
+* [Development Workflow](#Development Workflow) 
+   * [Overall description](#Overall description) 
+   * [Build the Docker image ](#Build the Docker image ) 
+   * [Run server locally](#Run server locally) 
+   * [Download the Docker image](#Download the Docker image) 
+   * [Communications inside the container](#Communications inside the container) 
+* [Extract of the application ](#Extract of the application ) 
 
 ## Description of the project
 
