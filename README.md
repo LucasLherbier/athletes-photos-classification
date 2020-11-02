@@ -7,17 +7,17 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 # Table of contents
 
 * Description of the project
-   * Goal
+   * [Goal](#Goal)
    * Description of this repository
    * Organization
-   * Extract of the application
 * Development Workflow
    * Overall description
    * Build the Docker image 
    * Run server locally
    * Download the Docker image
    * Communications inside the container
-    
+* Extract of the application 
+
 ## Description of the project
 
 ### Goal
@@ -48,28 +48,7 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
  * the web server has been developed with the micro web framework [*Flask*](https://flask.palletsprojects.com/en/1.1.x/)
  
  
- ### Extract of the application (old design)
-
-<figure>
-  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_1.png" alt="Trulli" style="width:100%">
-  <figcaption> <small> <i> Figure 1: Python server interface.</i>  </small> </figcaption>
-</figure>
-<br>
-
-<figure>
-  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_3.PNG" alt="Trulli" style="width:100%">
-  <figcaption> <small> <i> Figure 2: Prediction for a Nadal picture. </i>  </small> </figcaption>
-</figure>
-
-<br>
-
-<figure>
-  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_2.PNG" alt="Trulli" style="width:100%">
-  <figcaption> <small><small> <i> Figure 3: Prediction for a James picture.</i> </small> </figcaption>
-</figure>
-
-
- ### Development workflow
+### Development workflow
 
 #### Overall description
 A Github workflow is used to build the [*Docker*](https://www.docker.com/) image and release it on [*Docker Hub*](https://hub.docker.com/). It allows building and sharing the image. Building the image on our personal laptops (with Windows) was too time consuming, especially due to the presence of library [*TensorFlow*](https://www.tensorflow.org/?hl=fr). 
@@ -119,5 +98,25 @@ Flask is not optimized to be used directly as a web server in production moode :
 <figure>
   <img src="./data/communications_inside_container.JPG" alt="Trulli" style="width:100%">
   <figcaption> <small><small> <i> Figure 5: Communications inside the container.</i> </small> </figcaption>
+</figure>
+
+### Extract of the application
+
+<figure>
+  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_1.png" alt="Trulli" style="width:100%">
+  <figcaption> <small> <i> Figure 1: Python server interface.</i>  </small> </figcaption>
+</figure>
+<br>
+
+<figure>
+  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_3.PNG" alt="Trulli" style="width:100%">
+  <figcaption> <small> <i> Figure 2: Prediction for a Nadal picture. </i>  </small> </figcaption>
+</figure>
+
+<br>
+
+<figure>
+  <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_2.PNG" alt="Trulli" style="width:100%">
+  <figcaption> <small><small> <i> Figure 3: Prediction for a James picture.</i> </small> </figcaption>
 </figure>
 
