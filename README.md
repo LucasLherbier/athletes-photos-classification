@@ -8,7 +8,7 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 
 * [Description of the project](#Description of the project) 
    * [Goal](#Goal)
-   * [Description of this repository](#Description of this repository) 
+   * [Description of this repository](#'Description of this repository') 
    * [Organization](#Organization) 
 * [Development Workflow](#Development Workflow) 
    * [Overall description](#Overall description) 
