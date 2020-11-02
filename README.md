@@ -6,7 +6,7 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 
 # Table of contents
 
-* <a href='#Description of the project'> Description of the project</a>
+* <a id='Description of the project'> Description of the project</a>
 
 [Description of the project](#Description of the project) 
    * [Goal](#Goal)
