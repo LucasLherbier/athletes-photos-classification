@@ -55,12 +55,12 @@ For the moment, the application is only for two sportsmen, [Lebron James](https:
 </figure>
 
 
- ### Development worflow
+ ### Development workflow
 
 #### Overall description
-A Github workflow is used to build the Docker image and release it on Docker Hub. It allows building and sharing the image. Building the image our personnal laptops (with Windows) was too time consumming, specially due to the pesence of Tensor Flow. 
+A Github workflow is used to build the [*Docker*](https://www.docker.com/) image and release it on [*Docker Hub*](https://hub.docker.com/). It allows building and sharing the image. Building the image on our personal laptops (with Windows) was too time consuming, especially due to the presence of library [*TensorFlow*](https://www.tensorflow.org/?hl=fr). 
 
-The deployment in production is handled by Heroku. An automatic pipeline is used to build the Heroku app directly from the Github repository.
+The deployment in production is handled by [*Heroku*](https://www.heroku.com/). An automatic pipeline is used to build the Heroku app directly from the Github repository.
 
 All the workflow can be summarised by the following diagram.
 
@@ -77,7 +77,7 @@ git commit -m "<my-commit-message>"
 git tag -a build "<build message>"
 git push
 ```
-The image will be build by the Githun CI then published at https://hub.docker.com/repository/docker/glauda/athletes_classification
+The image will be build by the Github CI, and then published at https://hub.docker.com/repository/docker/glauda/athletes_classification
 
 #### Run server locally
 Download the Docker image
@@ -85,7 +85,7 @@ Download the Docker image
 
 Create and run the container. If you want to modify the server and see the changes, go to the project main directory and bind the *deploy* folder to the container when running it.
 
-Some changes might not appear because they are cached by your browser. For example, in chrome, you can press `Crtl+Cap+r` to "force refresh" the page.
+Some changes might not appear because they are cached by your browser. For example, with Google Chrome, you can press `Crtl+Cap+r` to "force refresh" the page.
 ```
 docker run -p 8080:8080 -it -v "$(pwd)"/deploy:/deploy glauda/athletes_classification python3 /deploy/app.py
 ```
@@ -100,7 +100,7 @@ Go to your browser, the server will be available at http://localhost:8080/
 
 
  ### Communications inside the container
-Flask is not optimized to be used directly as a web server in production moode (https://flask.palletsprojects.com/en/1.1.x/deploying/). This is why a wgsi server is used to interface with the Flask server. The wsgi server is run using the *gunicorn* command. 
+Flask is not optimized to be used directly as a web server in production moode : you will find more details [here](https://flask.palletsprojects.com/en/1.1.x/deploying/). This is why a `wgsi` server is used to interface with the Flask server. The wsgi server is run using the *gunicorn* command. 
 
 <figure>
   <img src="./data/communications_inside_container.JPG" alt="Trulli" style="width:100%">
