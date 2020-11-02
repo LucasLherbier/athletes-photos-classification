@@ -6,21 +6,19 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 
 # Table of contents
 
-* <a id='Description of the project'> Description of the project</a>
+* [Description of the project](#Description) 
+   * Goal
+   * Description of this repository
+   * Organization
+* Development Workflow
+   * Overall description
+   * Build the Docker image
+   * Run server locally
+   * Download the Docker image
+   * Communications inside the container
+* [Extract of the application](#Application) 
 
-[Description of the project](#Description of the project) 
-   * [Goal](#Goal)
-   * [Description of this repository](#"Description of this repository") 
-   * [Organization](#Organization) 
-* [Development Workflow](#Development Workflow) 
-   * [Overall description](#Overall description) 
-   * [Build the Docker image ](#Build the Docker image ) 
-   * [Run server locally](#Run server locally) 
-   * [Download the Docker image](#Download the Docker image) 
-   * [Communications inside the container](#Communications inside the container) 
-* [Extract of the application ](#Extract of the application ) 
-
-## Description of the project
+## Description
 
 ### Goal
 
@@ -102,7 +100,7 @@ Flask is not optimized to be used directly as a web server in production moode :
   <figcaption> <small><small> <i> Figure 5: Communications inside the container.</i> </small> </figcaption>
 </figure>
 
-### Extract of the application
+### Application
 
 <figure>
   <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_1.png" alt="Trulli" style="width:100%">
