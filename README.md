@@ -18,8 +18,9 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
    * How to use the Docker image and Docker container ?
    * Extracts of the application
 
-
+*********************
 ## Description
+*********************
 
 ### Goal
 
@@ -51,10 +52,11 @@ The application is only for two sportsmen, leaders of their respective sport, [L
  * because of problems with necessary packages, we create a [*Docker*](https://www.docker.com/) container
  * the Github workflow from [*Heroku*](https://www.heroku.com/) and [*Docker Hub*](https://hub.docker.com/) has been made
  
- 
-### Explanation
+*********************
+## Explanation
+*********************
 
-#### Overall description of the development workflow
+### Overall description of the development workflow
 A Github workflow is used to build the [*Docker*](https://www.docker.com/) image and release it on [*Docker Hub*](https://hub.docker.com/). It allows building and sharing the image. Building the image on our personal laptops (with Windows) was too time consuming, especially due to the presence of library [*TensorFlow*](https://www.tensorflow.org/?hl=fr). 
 
 The deployment in production is handled by [*Heroku*](https://www.heroku.com/). An automatic pipeline is used to build the Heroku app directly from the Github repository.
@@ -66,7 +68,7 @@ All the workflow can be summarised by the following diagram.
   <figcaption> <small><small> <i> Figure 4: Development Workflow.</i> </small> </figcaption>
 </figure>
 
-#### Build the Docker image 
+### Build the Docker image 
 Add a tag *build* to your commit, then push it on Github.
 ```
 git add <updated-files>
@@ -77,7 +79,7 @@ git push
 The image will be build by the Github CI, and then published at https://hub.docker.com/repository/docker/glauda/athletes_classification
 
 
-#### Communications inside the container
+### Communications inside the container
 Flask is not optimized to be used directly as a web server in production moode : you will find more details [here](https://flask.palletsprojects.com/en/1.1.x/deploying/). This is why a `wgsi` server is used to interface with the Flask server. The wsgi server is run using the *gunicorn* command. 
 
 <figure>
@@ -86,10 +88,10 @@ Flask is not optimized to be used directly as a web server in production moode :
 </figure>
 
 
-
-### Use
-
-#### How to use the Docker image and Docker container ?
+*********************
+## Use
+*********************
+### How to use the Docker image and Docker container ?
 
 Download the Docker image
 `docker pull glauda/athletes_classification:latest`
@@ -109,7 +111,7 @@ python3 app.py
 
 Go to your browser, the server will be available at http://localhost:8080/
 
-####  Extracts of the application
+###  Extracts of the application
 
 <figure>
   <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_1.png" alt="Trulli" style="width:100%">
