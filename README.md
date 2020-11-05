@@ -18,9 +18,7 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
    * How to use the Docker image and Docker container ?
    * Extracts of the application
 
-*********************
 ## Description
-*********************
 
 ### Goal
 
@@ -52,9 +50,8 @@ The application is only for two sportsmen, leaders of their respective sport, [L
  * because of problems with necessary packages, we create a [*Docker*](https://www.docker.com/) container
  * the Github workflow from [*Heroku*](https://www.heroku.com/) and [*Docker Hub*](https://hub.docker.com/) has been made
  
-*********************
+
 ## Explanation
-*********************
 
 ### Overall description of the development workflow
 A Github workflow is used to build the [*Docker*](https://www.docker.com/) image and release it on [*Docker Hub*](https://hub.docker.com/). It allows building and sharing the image. Building the image on our personal laptops (with Windows) was too time consuming, especially due to the presence of library [*TensorFlow*](https://www.tensorflow.org/?hl=fr). 
@@ -88,9 +85,8 @@ Flask is not optimized to be used directly as a web server in production moode :
 </figure>
 
 
-*********************
 ## Use
-*********************
+
 ### How to use the Docker image and Docker container ?
 
 Download the Docker image
