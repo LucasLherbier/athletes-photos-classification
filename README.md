@@ -80,7 +80,7 @@ The image will be build by the Github CI, and then published at https://hub.dock
 Flask is not optimized to be used directly as a web server in production moode : you will find more details [here](https://flask.palletsprojects.com/en/1.1.x/deploying/). This is why a `wgsi` server is used to interface with the Flask server. The wsgi server is run using the *gunicorn* command. 
 
 <figure>
-  <img src="./data/communications_inside_container.JPG" alt="Trulli" style="width:100%">
+  <img src="./data/communications_inside_container.JPG" alt="Trulli" style="width:70%">
   <figcaption> <small><small> <i> Figure 5: Communications inside the container.</i> </small> </figcaption>
 </figure>
 
