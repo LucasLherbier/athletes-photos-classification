@@ -20,7 +20,7 @@ ops.reset_default_graph()
 app = Flask(__name__)
 os.getcwd()
 
-model = keras.models.load_model('D:/Documents/Data Science/James vs Nadal/deploy/models/james_vs_nadal_v2.h5')
+model = keras.models.load_model('./models/james_vs_nadal_v2.h5')
 file_path = 'D:/Documents/Data Science/James vs Nadal/deploy/uploads/james84.jpg'
 
 
@@ -69,4 +69,4 @@ def upload():
 
 # --------------------------------- MAIN ---------------------------------
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=8080)
