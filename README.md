@@ -1,8 +1,8 @@
 # Athletes photos classification
 
-This repository is an ongoing personal project combining my passion for sport with data science, realized by [Florent Glauda](https://www.linkedin.com/in/florent-glauda/) and [myself](https://fr.linkedin.com/in/lucas-lherbier/en).
+This repository is an ongoing personal project combining my passion for sport with data science, realized by [Florent Glauda](https://www.linkedin.com/in/florent-glauda/) and [Lucas Lherbier](https://fr.linkedin.com/in/lucas-lherbier/en).
 
-A live version of the app can be found at https://stormy-savannah-71478.herokuapp.com
+A live version of the app can be found [here at herokuapp](https://stormy-savannah-71478.herokuapp.com) (wait few seconds for loading).
 
 # Table of contents
 
@@ -22,12 +22,12 @@ A live version of the app can be found at https://stormy-savannah-71478.herokuap
 
 ### Goal
 
-The goal of the project is to implement a *Python* server, as an application, allowing to classify pictures between famous athletes. The classification is based on an deep learning model using convolutional neural networks.  
+The goal of the project is to implement a *Python* server, as an application, including a simple deep learning model. The application allows to classify pictures between famous athletes and is based on an deep learning model using convolutional neural networks.  
 The application is only for two sportsmen, leaders of their respective sport, [Lebron James](https://en.wikipedia.org/wiki/LeBron_James) and [Rafael Nadal](https://en.wikipedia.org/wiki/Rafael_Nadal). 
 
 ### Description of this repository
 
-* `CNN_sport.ipynb`: it explains how the deep learning model has been created. It needs around 30s to load.
+* **`CNN_sport.ipynb`: it explains how the deep learning model has been created.** It needs around 30s to load.
 * `Dockerfile`: it creates a docker image for running the app as a container
 * `heroku.yml`: it creates the heroku app. The Docker image will be built by Heroku.
 * **.github/workflows**: it builds the Docker image and push it on Docker Hub in the repository `glauda/athletes_classification`. 
@@ -38,7 +38,7 @@ The application is only for two sportsmen, leaders of their respective sport, [L
   * **static**: it contains a [*CSS*](https://www.w3schools.com/css/) file for styling the application and a [*JavaScript*](https://www.w3schools.com/js/) file that adds dynamic behavior to the page.
   * **templates**: it is composed of [*HTML*](https://www.w3schools.com/html/) scripts in which the variable data can be inserted dynamically. A template is rendered with specific data to produce a final document. The goal is to avoid generating HTML content from Python code, which is inconvenient.
   * **uploads**: storage folder for all the uploaded pictures
-  * `app.py`: the *Flask* application - it imports the *Flask* module, creates a web server and instances of the *Flask* class -
+  * `app.py`: the [*Flask*](https://flask.palletsprojects.com/en/1.1.x/) application - it imports the *Flask* module, creates a web server and instances of the *Flask* class -
   * `requirements.txt`: it contains the list of all packages needed to create the Docker image.
   * `wsgi.py`:it is the WSGI (Web Server Gateway Interface) used to interface Flask server with web server in production mode.
  
@@ -88,24 +88,24 @@ Flask is not optimized to be used directly as a web server in production moode :
 ## Use
 
 ### How to use the Docker image and Docker container ?
-
-Download the Docker image
+* Install [Docker Desktop](https://docs.docker.com/docker-for-windows/install/)
+* Download the Docker image
 `docker pull glauda/athletes_classification:latest`
+* Create and run the container. If you want to modify the server and see the changes, go to the project main directory and bind the *deploy* folder to the container when running it. 
 
-Create and run the container. If you want to modify the server and see the changes, go to the project main directory and bind the *deploy* folder to the container when running it.
 
-Some changes might not appear because they are cached by your browser. For example, with Google Chrome, you can press `Crtl+Cap+r` to "force refresh" the page.
+Some changes might not appear because they are cached by your browser. For example, with Google Chrome, you can press `Crtl+Cap+r` to "force refresh" the page. With windows, replace ``"$(pwd)"`` by ``${PWD}``.
 ```
 docker run -p 8080:8080 -it -v "$(pwd)"/deploy:/deploy glauda/athletes_classification python3 /deploy/app.py
 ```
 
-Otherwise, you can open a shell the container and start the server
+Otherwise, you can open a shell the container and start the server.
 ```
 docker run -p 8080:8080 -it -v "$(pwd)"/deploy:/deploy glauda/athletes_classification /bin/bash
 python3 app.py
 ```
 
-Go to your browser, the server will be available at http://localhost:8080/
+* Go to your browser, the server will be available at http://localhost:8080/.
 
 ###  Extracts of the application
 
