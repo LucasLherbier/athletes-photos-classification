@@ -46,13 +46,9 @@ $(document).ready(function () {
                 $('.loader').hide();
                 $('#result').fadeIn(1200);
 
-                //let text;
                 //console.log(data)
-                //parseInt(data) > 50 ? text = data + '% Nadal' : text = data + '% James'
-                //$('#result').text(text);
-                //console.log(text)
 
-                $('#result').text(data + '% Nadal');
+                $('#result').text(data);
                 console.log('Success!');
             },
         });

@@ -126,4 +126,3 @@ Go to your browser, the server will be available at http://localhost:8080/
   <img src="https://raw.githubusercontent.com/LucasLherbier/athletes-photos-classification/master/data/App_2.PNG" alt="Trulli" style="width:100%">
   <figcaption> <small><small> <i> Figure 3: Prediction for a James picture.</i> </small> </figcaption>
 </figure>
-
